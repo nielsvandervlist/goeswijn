@@ -1,0 +1,83 @@
+.menu-content {
+    h2 {
+        font-family: Rig-BoldFill;
+        font-size: 54px;
+        color: #402214;
+        letter-spacing: 9.09px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        margin-bottom: 30px;
+
+        &:before {
+            content: '';
+            @apply bg-yellow;
+            height: 14px;
+            border-radius: 36px;
+            width: 105%;
+            position: absolute;
+            left: 50%;
+            bottom: 13px;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+
+    h3 {
+        font-family: CormorantGaramond-Bold;
+        font-size: 25px;
+        color: #402214;
+        letter-spacing: 4.21px;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:after {
+            position: absolute;
+            bottom: -15px;
+            left: 0px;
+            content: '';
+            height: 1px;
+            width: 100%;
+            background: #402214;
+        }
+    }
+
+    table {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: #402214;
+        letter-spacing: 0.6px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+        tr {
+            display: flex;
+            line-height: 36px;
+
+            td {
+                font-weight: 300;
+
+                &:last-child {
+                    flex: 1;
+                    text-align: right;
+                    width: 100%;
+                    @apply font-bold;
+                    position: relative;
+                    overflow: hidden;
+
+                    &:before {
+                        content: '.................................................................................................';
+                        position: absolute;
+                        left: 10px;
+                        right: 50px;
+                        bottom: 3px;
+                        letter-spacing: 10px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

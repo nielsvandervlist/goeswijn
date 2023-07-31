@@ -30,7 +30,7 @@ export default function Blocks({className}){
         let blocksArray = []
 
         for (let i = 0; i < numberOfBlocks; i++ ){
-            blocksArray.push(<div className={'flex'}>
+            blocksArray.push(<div key={i} className={'flex'}>
                 <div className={clsx(className, 'border-brown border-[2px] border-l-[0px] h-[60px] w-[60px]')}/>
                 <div className={'border-brown bg-background border-[2px] border-l-[0px] h-[60px] w-[60px]'}/>
             </div>)

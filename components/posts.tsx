@@ -13,9 +13,9 @@ export default function Posts({posts}){
                     >
                     </figure>
                     <img className={'-z-1 absolute'} src={'/circle.png'}/>
-                    <div className={'w-full w-[540px] h-[570px]'}>
+                    <div className={'w-[540px] h-[570px]'}>
                         <h3 className={'text-brown underline-yellow text-[32px] tracking-widest mb-8'}>{post.node.title}</h3>
-                        <div className={'text mb-10'} dangerouslySetInnerHTML={{__html: post.node.excerpt}}/>
+                        <div className={'text mb-14'} dangerouslySetInnerHTML={{__html: post.node.excerpt}}/>
                         <Link className={'btn'} href={`/${post.node.title}`}>{post.node.title}</Link>
                     </div>
                 </div>

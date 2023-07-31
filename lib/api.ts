@@ -59,6 +59,29 @@ export async function getAllPostsWithSlug() {
   return data?.posts
 }
 
+export async function getMenuContent() {
+  const data = await fetchAPI(`
+    {
+        page(id: "2", idType: DATABASE_ID) {
+            content
+        }
+    }
+    `)
+  return data?.page
+}
+
+export async function getReseverationContent() {
+  const data = await fetchAPI(`
+    {
+        page(id: "27", idType: DATABASE_ID) {
+            content
+        }
+    }
+    `)
+  return data?.page
+}
+
+
 export async function getAllPostsForHome(preview) {
   const data = await fetchAPI(
     `

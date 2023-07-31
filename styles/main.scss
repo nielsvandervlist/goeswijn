@@ -1,7 +1,9 @@
 @import 'typo.scss';
 @import 'buttons.scss';
 @import 'posts.scss';
+@import 'menu.scss';
 
 body {
     @apply bg-background;
+    overflow-x: hidden;
 }
