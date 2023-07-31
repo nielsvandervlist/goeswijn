@@ -1,0 +1,25 @@
+.posts {
+    .post {
+
+        img {
+            left: -20%;
+            top: 50%;
+        }
+
+        &:nth-child(even){
+
+            img {
+                left: auto;
+                right: -20%;
+            }
+
+            figure {
+                order: 2;
+            }
+
+            div {
+                order: 1;
+            }
+        }
+    }
+}

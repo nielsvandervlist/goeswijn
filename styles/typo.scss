@@ -1,0 +1,110 @@
+//Rig Solid Bold Fill
+h1, h2, h3 {
+    font-family: "rig-solid-bold-fill", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #402214;
+    letter-spacing: 0.6px;
+    line-height: 36px;
+}
+
+.underline-yellow {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &:before {
+        content: '';
+        @apply bg-yellow;
+        height: 14px;
+        border-radius: 36px;
+        width: 105%;
+        position: absolute;
+        left: 50%;
+        bottom: 2px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.written {
+    font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+}
+
+//Rig Solid Bold Halftone
+.class {
+    font-family: "rig-solid-bold-halftone", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+//Rig Solid Bold Inline
+.class {
+    font-family: "rig-solid-bold-inline", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+//Rig Solid Bold Inline Solo
+.class {
+    font-family: "rig-solid-bold-inline-solo", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+//Rig Solid Bold Outline
+.class {
+    font-family: "rig-solid-bold-outline", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+//Rig Solid Bold Reverse
+.class {
+    font-family: "rig-solid-bold-reverse", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+//Rig Solid Light Fill
+.class {
+    font-family: "rig-solid-light-fill", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+//Rig Solid Light Halftone
+.class {
+    font-family: "rig-solid-light-halftone", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+//Rig Solid Medium Fill
+.class {
+    font-family: "rig-solid-medium-fill", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+//Rig Solid Medium Halftone
+.class {
+    font-family: "rig-solid-medium-halftone", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+//Rig Solid Medium Lines
+.class {
+    font-family: "rig-solid-medium-lines", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+//Rig Solid Medium Outline
+.class {
+    font-family: "rig-solid-medium-outline", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+//Rig Solid Zero Halftone
+.class {
+    font-family: "rig-solid-zero-halftone", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}

@@ -6,10 +6,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        urban: ['Urbanist', 'sans-serif'],
+      },
       colors: {
-        'accent-1': '#FAFAFA',
-        'accent-2': '#EAEAEA',
-        'accent-7': '#333',
+        'orange': '#C14A13',
+        'yellow': '#FAD16D',
+        'green': '#46685B',
+        'brown': '#402214',
+        'background': '#F7EBD6',
         success: '#0070f3',
         cyan: '#79FFE1',
       },

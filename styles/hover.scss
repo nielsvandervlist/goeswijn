@@ -1,0 +1,8 @@
+.test {
+    border: 0px solid #402214;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+        border: 1px solid #402214;
+    }
+}
