@@ -9,6 +9,7 @@ import {getAllPostsForHome} from '../lib/api'
 import Posts from "../components/posts";
 import ResengoWidget from "../components/resengoWidget";
 import Blocks from "../components/blocks";
+import Footer from "../components/footer";
 
 export default function Index({allPosts: {edges}, preview}) {
 
@@ -23,14 +24,7 @@ export default function Index({allPosts: {edges}, preview}) {
                     <Posts posts={edges}/>
                 }
             </Container>
-            <footer className={'relative mt-80'}>
-
-                <ResengoWidget />
-
-                <div className={'absolute bottom-[0px] -left-[60px] right-0'}><Blocks className={'bg-green'}/></div>
-                <div className={'absolute bottom-[58px] left-0 right-0'}><Blocks className={'bg-green'}/></div>
-                <div className={'absolute bottom-[116px] -left-[60px] right-0'}><Blocks className={'bg-green'}/></div>
-            </footer>
+            <Footer/>
         </Layout>
     )
 }

@@ -6,6 +6,7 @@ import {getMenuContent} from '../lib/api'
 import IntroMenu from "../components/intromenu";
 import ResengoWidget from "../components/resengoWidget";
 import Blocks from "../components/blocks";
+import Footer from "../components/footer";
 
 export default function Menu({ menu }, preview ) {
 
@@ -20,11 +21,7 @@ export default function Menu({ menu }, preview ) {
         <IntroMenu />
           <div className={'menu-content my-40 max-w-[700px] mx-auto'} dangerouslySetInnerHTML={{ __html: table }} />
       </Container>
-        <footer className={'relative mt-80'}>
-            <div className={'absolute bottom-[0px] -left-[60px] right-0'}><Blocks className={'bg-green'}/></div>
-            <div className={'absolute bottom-[58px] left-0 right-0'}><Blocks className={'bg-green'}/></div>
-            <div className={'absolute bottom-[116px] -left-[60px] right-0'}><Blocks className={'bg-green'}/></div>
-        </footer>
+        <Footer/>
     </Layout>
   )
 }

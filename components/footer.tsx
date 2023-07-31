@@ -5,7 +5,7 @@ import ResengoWidget from "./resengoWidget";
 
 export default function Footer() {
   return (
-    <footer className={'relative mt-80'}>
+    <footer className={'mt-20 lg:mt-80 relative'}>
 
         <ResengoWidget />
 

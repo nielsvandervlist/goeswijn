@@ -12,14 +12,14 @@ export default function Header() {
         <h2 className={'text-[35px] text-brown'}>
             Goeswijn
         </h2>
-        <nav>
+        <nav className={'lg:block hidden'}>
             <ul className={'flex gap-8'}>
                 <li className={router.pathname === '/' ? 'written tracking-widest text-[20px] text-orange' : 'written tracking-widest text-[20px]'}><Link href={'/'}>Home</Link></li>
                 <li className={router.pathname === '/menu' ? 'written tracking-widest text-[20px] text-orange' : 'written tracking-widest text-[20px]'}><Link href={'/menu'}>Menu</Link></li>
                 <li className={router.pathname === '/contact' ? 'written tracking-widest text-[20px] text-orange' : 'written tracking-widest text-[20px]'}><Link href={'/contact'}>Contact</Link></li>
             </ul>
         </nav>
-        <ul className={'flex gap-4'}>
+        <ul className={'gap-4 lg:flex hidden'}>
             <li>
                 <a href={'/'}>
                     <FontAwesomeIcon className={'text-[20px]'} icon={faInstagram}/>
