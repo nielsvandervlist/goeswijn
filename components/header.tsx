@@ -11,7 +11,7 @@ export default function Header() {
     const [open, setOpen] = useState(false)
 
     return (
-        <header className={'flex justify-between p-8 absolute top-0 left-0 right-0 z-20'}>
+        <header className={'flex justify-between lg:p-8 p-4 absolute top-0 left-0 right-0 z-20'}>
             <h2 className={'text-[35px] text-brown'}>
                 Goeswijn
             </h2>
@@ -38,12 +38,12 @@ export default function Header() {
                 </li>
             </ul>
             <FontAwesomeIcon
-                className={'text-brown text-[32px] absolute right-8 top-8 lg:hidden'}
+                className={'text-brown text-[32px] absolute top-[20px] right-[20px] lg:hidden'}
                 icon={faBars}
                 onClick={() => setOpen(!open)}
             />
             {open && <div className={'mobile-nav fixed inset-0 bg-background z-20 flex justify-center items-center'}>
-                <FontAwesomeIcon className={'absolute top-8 right-8 text-[32px]'} icon={faX}
+                <FontAwesomeIcon className={'absolute top-[20px] right-[20px] text-[32px]'} icon={faX}
                                  onClick={() => setOpen(false)}/>
                 <nav>
                     <ul className={'text-center gap-8 flex flex-col'}>
