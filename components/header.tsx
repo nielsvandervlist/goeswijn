@@ -12,9 +12,9 @@ export default function Header() {
 
     return (
         <header className={'flex justify-between lg:p-8 p-4 absolute top-0 left-0 right-0 z-20'}>
-            <h2 className={'text-[35px] text-brown'}>
+            <Link href={'/'}><h2 className={'text-[35px] text-brown'}>
                 Goeswijn
-            </h2>
+            </h2></Link>
             <nav className={'lg:block hidden main-menu'}>
                 <ul className={'flex gap-8'}>
                     <li className={router.pathname === '/' ? 'written tracking-widest text-[20px] text-orange' : 'written tracking-widest text-[20px]'}>
