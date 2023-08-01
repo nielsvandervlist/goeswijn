@@ -6,10 +6,16 @@ import {getMenuContent} from '../lib/api'
 import IntroMenu from "../components/intromenu";
 import IntroContact from "../components/introcontact";
 import Blocks from "../components/blocks";
+import PageTransition from "../components/PageTransition";
+import React from "react";
 
-export default function Menu({ menu }, preview ) {
+type IndexPageProps = {}
+type IndexPageRef = React.ForwardedRef<HTMLDivElement>
+
+export default function Menu({ menu }, preview, props: IndexPageProps, ref: IndexPageRef ) {
 
   return (
+      <PageTransition ref={ref}>
     <Layout preview={preview}>
       <Head>
         <title>{`Bistro Goeswijn`}</title>
@@ -23,5 +29,6 @@ export default function Menu({ menu }, preview ) {
             <div className={'absolute bottom-[117px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
         </div>
     </Layout>
+      </PageTransition>
   )
 }

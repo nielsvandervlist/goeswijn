@@ -10,10 +10,16 @@ import Posts from "../components/posts";
 import ResengoWidget from "../components/resengoWidget";
 import Blocks from "../components/blocks";
 import Footer from "../components/footer";
+import React from "react";
+import PageTransition from "../components/PageTransition";
 
-export default function Index({allPosts: {edges}, preview}) {
+type IndexPageProps = {}
+type IndexPageRef = React.ForwardedRef<HTMLDivElement>
+
+export default function Index({allPosts: {edges}, preview}, props: IndexPageProps, ref: IndexPageRef ) {
 
     return (
+        <PageTransition ref={ref}>
         <Layout preview={preview}>
             <Head>
                 <title>{`Bistro Goeswijn`}</title>
@@ -26,13 +32,16 @@ export default function Index({allPosts: {edges}, preview}) {
                 <div className={'absolute bottom-[59px] left-0 right-0'}><Blocks className={'bg-orange'}/></div>
                 <div className={'absolute bottom-[117px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
             </div>
+            <div className={'overflow-hidden lg:overflow-visible -mt-[140px] lg:mt-0'}>
             <Container>
                 {edges.length > 0 &&
                     <Posts posts={edges}/>
                 }
             </Container>
+            </div>
             <Footer/>
         </Layout>
+        </PageTransition>
     )
 }
 

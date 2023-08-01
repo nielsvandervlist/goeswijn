@@ -37,6 +37,43 @@ h1, h2, h3 {
     }
 }
 
+@keyframes line {
+    from {
+        left: 0;
+        width: 0;
+    }
+    to {
+        left: 50%;
+        width: 105%;
+    }
+}
+
+.underline-yellow.intro{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    &:before {
+        width: 0;
+        content: '';
+        @apply bg-yellow;
+        height: 14px;
+        border-radius: 36px;
+        position: absolute;
+        animation: line 1s ease-out forwards;
+        animation-iteration-count: 1;
+        animation-delay: 0.3s;
+        bottom: 2px;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    @media only screen and (max-width: 1024px){
+        &:before{
+            display: none;
+        }
+    }
+}
+
 .written {
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;

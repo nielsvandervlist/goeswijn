@@ -7,12 +7,18 @@ import IntroMenu from "../components/intromenu";
 import ResengoWidget from "../components/resengoWidget";
 import Blocks from "../components/blocks";
 import Footer from "../components/footer";
+import React from "react";
+import PageTransition from "../components/PageTransition";
 
-export default function Menu({menu}, preview) {
+type IndexPageProps = {}
+type IndexPageRef = React.ForwardedRef<HTMLDivElement>
+
+export default function Menu({menu}, preview, props: IndexPageProps, ref: IndexPageRef) {
 
     const table = menu.content.replace(/\\"/g, '"')
 
     return (
+        <PageTransition ref={ref}>
         <Layout preview={preview}>
             <Head>
                 <title>{`Bistro Goeswijn`}</title>
@@ -34,6 +40,7 @@ export default function Menu({menu}, preview) {
             </div>
             <Footer/>
         </Layout>
+        </PageTransition>
     )
 }
 
