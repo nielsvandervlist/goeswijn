@@ -73,7 +73,7 @@ h1, h2, h3 {
         animation: line 1s ease-out forwards;
         animation-iteration-count: 1;
         animation-delay: 0.3s;
-        bottom: -15px;
+        bottom: 2px;
         transform: translateX(-50%);
         z-index: -1;
     }
@@ -81,6 +81,7 @@ h1, h2, h3 {
     @media only screen and (max-width: 1024px){
         &:before{
             animation: mobile-line 1s ease-out forwards;
+            bottom: -15px;
         }
     }
 }
