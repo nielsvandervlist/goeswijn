@@ -112,3 +112,10 @@
         font-weight: 300;
     }
 }
+
+.main-menu {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+}

@@ -32,7 +32,7 @@ export default function Index({allPosts: {edges}, preview}, props: IndexPageProp
                 <div className={'absolute bottom-[59px] left-0 right-0'}><Blocks className={'bg-orange'}/></div>
                 <div className={'absolute bottom-[117px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
             </div>
-            <div className={'overflow-hidden lg:overflow-visible -mt-[140px] lg:mt-0'}>
+            <div className={'overflow-hidden lg:overflow-visible -mt-[140px] lg:mt-0 pt-[60px] lg:pt-0'}>
             <Container>
                 {edges.length > 0 &&
                     <Posts posts={edges}/>

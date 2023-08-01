@@ -15,7 +15,7 @@ export default function Header() {
             <h2 className={'text-[35px] text-brown'}>
                 Goeswijn
             </h2>
-            <nav className={'lg:block hidden'}>
+            <nav className={'lg:block hidden main-menu'}>
                 <ul className={'flex gap-8'}>
                     <li className={router.pathname === '/' ? 'written tracking-widest text-[20px] text-orange' : 'written tracking-widest text-[20px]'}>
                         <Link href={'/'}>Home</Link></li>

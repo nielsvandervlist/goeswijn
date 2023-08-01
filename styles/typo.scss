@@ -32,7 +32,7 @@ h1, h2, h3 {
 
     @media only screen and (max-width: 1024px){
         &:before{
-            display: none;
+            //display: none;
         }
     }
 }
@@ -45,6 +45,17 @@ h1, h2, h3 {
     to {
         left: 50%;
         width: 105%;
+    }
+}
+
+@keyframes mobile-line {
+    from {
+        left: 0;
+        width: 0;
+    }
+    to {
+        left: 50%;
+        width: 50%;
     }
 }
 
@@ -62,14 +73,14 @@ h1, h2, h3 {
         animation: line 1s ease-out forwards;
         animation-iteration-count: 1;
         animation-delay: 0.3s;
-        bottom: 2px;
+        bottom: -15px;
         transform: translateX(-50%);
         z-index: -1;
     }
 
     @media only screen and (max-width: 1024px){
         &:before{
-            display: none;
+            animation: mobile-line 1s ease-out forwards;
         }
     }
 }
