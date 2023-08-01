@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import {getMenuContent} from '../lib/api'
 import IntroMenu from "../components/intromenu";
 import IntroContact from "../components/introcontact";
+import Blocks from "../components/blocks";
 
 export default function Menu({ menu }, preview ) {
 
@@ -16,6 +17,11 @@ export default function Menu({ menu }, preview ) {
       <Container>
         <IntroContact />
       </Container>
+        <div className={'relative overflow-x-hidden w-full h-[180px] -mt-[180px]'}>
+            <div className={'absolute bottom-[1px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
+            <div className={'absolute bottom-[59px] left-0 right-0'}><Blocks className={'bg-orange'}/></div>
+            <div className={'absolute bottom-[117px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
+        </div>
     </Layout>
   )
 }

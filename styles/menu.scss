@@ -9,6 +9,10 @@
         display: inline-block;
         margin-bottom: 30px;
 
+        @media only screen and (max-width: 1024px){
+            font-size: 32px;
+        }
+
         &:before {
             content: '';
             @apply bg-yellow;
@@ -20,6 +24,10 @@
             bottom: 13px;
             transform: translateX(-50%);
             z-index: -1;
+
+            @media only screen and (max-width: 1024px){
+                display: none;
+            }
         }
     }
 
@@ -56,8 +64,16 @@
             display: flex;
             line-height: 36px;
 
+            @media only screen and (max-width: 1024px){
+                display: table-row;
+            }
+
             td {
                 font-weight: 300;
+
+                @media only screen and (max-width: 1024px){
+                    font-size: 14px;
+                }
 
                 &:last-child {
                     flex: 1;
@@ -66,6 +82,10 @@
                     @apply font-bold;
                     position: relative;
                     overflow: hidden;
+
+                    @media only screen and (max-width: 1024px){
+                        width: 1%;
+                    }
 
                     &:before {
                         content: '.................................................................................................';

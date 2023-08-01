@@ -20,6 +20,13 @@ export default function Index({allPosts: {edges}, preview}) {
             </Head>
             <Container>
                 <Intro/>
+            </Container>
+            <div className={'relative overflow-x-hidden w-full h-[180px] bottom-[180px]'}>
+                <div className={'absolute bottom-[1px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
+                <div className={'absolute bottom-[59px] left-0 right-0'}><Blocks className={'bg-orange'}/></div>
+                <div className={'absolute bottom-[117px] -left-[60px] right-0'}><Blocks className={'bg-orange'}/></div>
+            </div>
+            <Container>
                 {edges.length > 0 &&
                     <Posts posts={edges}/>
                 }

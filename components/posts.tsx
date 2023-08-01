@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Posts({posts}){
 
-    return <section className={'container py-20 lg:py-40 lg:flex flex-col justify-center gap-40 posts'}>
+    return <section className={'container py-0 lg:flex flex-col justify-center gap-40 posts'}>
 
         {
             posts.map((post, index) => {
