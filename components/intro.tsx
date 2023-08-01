@@ -35,7 +35,7 @@ export default function Intro() {
                 </div>
                 <h2 className={'text-brown underline-yellow text-[28px] lg:text-[32px] tracking-widest intro mb-20'}>natuurwijn en sharing
                     dishes</h2>
-                <Link className={'btn'} href={`/menu`}>Bekijk menu</Link>
+                <Link scroll={false} className={'btn'} href={`/menu`}>Bekijk menu</Link>
             </div>
         </motion.section>
     )
