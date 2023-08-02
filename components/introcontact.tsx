@@ -22,9 +22,8 @@ export default function IntroContact() {
                             </li>
                             <li className={'text-[24px] lg:text-[32px] mb-4 written'}>bistrogoeswijn@gmail.com</li>
                             <li>
-                                <a target={'_blank'} href={'https://www.google.com/maps/place/Bistro+Goeswijn/@52.157204,4.4894487,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5c7fda83cdef3:0x63df6ddbf3daefd8!8m2!3d52.157204!4d4.4920236!16s%2Fg%2F11sj59fm7j?entry=ttu'}>
-                                    <h3 className={'route z-20 text-[32px] lg:text-[48px] text-brown p-4 w-full block mb-10'}>
-                                        <FontAwesomeIcon icon={faLocationDot}/> Route</h3>
+                                <a className={'btn mt-4 inline-block'} target={'_blank'} href={'https://www.google.com/maps/place/Bistro+Goeswijn/@52.157204,4.4894487,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5c7fda83cdef3:0x63df6ddbf3daefd8!8m2!3d52.157204!4d4.4920236!16s%2Fg%2F11sj59fm7j?entry=ttu'}>
+                                        <FontAwesomeIcon icon={faLocationDot}/> Route
                                 </a>
                             </li>
                         </ul>
