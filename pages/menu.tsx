@@ -21,7 +21,7 @@ export default function Menu({menu}, preview, props: IndexPageProps, ref: IndexP
         <PageTransition ref={ref}>
         <Layout preview={preview}>
             <Head>
-                <title>{`Bistro Goeswijn`}</title>
+                <title>{`Menu`}</title>
             </Head>
             <Container>
                 <IntroMenu/>
