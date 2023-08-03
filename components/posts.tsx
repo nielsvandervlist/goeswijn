@@ -40,7 +40,7 @@ export default function Posts({posts}) {
                             <div className={'lg:w-[540px] lg:h-[570px]'}>
                                 <h3 className={'text-brown underline-yellow text-[32px] tracking-widest mb-8'}>{post.node.title}</h3>
                                 <div className={'post-text mb-14'} dangerouslySetInnerHTML={{__html: post.node.excerpt}}/>
-                                <Link className={'btn'} href={`/${post.node.title}`}>{post.node.title}</Link>
+                                <Link scroll={false} className={'btn'} href={`/${post.node.slug}`}>Lees meer</Link>
                             </div>
                     </motion.div>
                 })

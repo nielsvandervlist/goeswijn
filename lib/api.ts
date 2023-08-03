@@ -70,16 +70,19 @@ export async function getMenuContent() {
   return data?.page
 }
 
-export async function getReseverationContent() {
+export async function getBlogContent() {
   const data = await fetchAPI(`
     {
-        page(id: "27", idType: DATABASE_ID) {
+        page(id: "62", idType: DATABASE_ID) {
             content
+            title
+            date
         }
     }
     `)
   return data?.page
 }
+
 
 
 export async function getAllPostsForHome(preview) {
