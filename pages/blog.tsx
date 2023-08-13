@@ -24,7 +24,7 @@ export default function Menu({blog}, preview, props: IndexPageProps, ref: IndexP
             </Head>
             <Container>
                 <div className={'min-h-screen flex items-center justify-center flex-col text-center'}>
-                    <h1 className={'text-orange text-[54px] lg:text-[120px] tracking-widest -mt-[150px]'}>{blog.title}</h1>
+                    <h1 className={'text-orange text-[10vw] lg:text-[120px] tracking-widest -mt-[150px]'}>{blog.title}</h1>
                 </div>
             </Container>
             <div className={'relative overflow-x-hidden w-full h-[180px] bottom-[180px]'}>

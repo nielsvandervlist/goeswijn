@@ -27,7 +27,7 @@ export default function Header() {
             </nav>
             <ul className={'gap-4 lg:flex hidden'}>
                 <li>
-                    <a href={'/'}>
+                    <a href={'https://www.instagram.com/goeswijn/'}>
                         <FontAwesomeIcon className={'text-[20px]'} icon={faInstagram}/>
                     </a>
                 </li>
