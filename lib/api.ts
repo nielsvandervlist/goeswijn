@@ -83,6 +83,19 @@ export async function getBlogContent() {
   return data?.page
 }
 
+export async function getContactContent() {
+  const data = await fetchAPI(`
+    {
+        page(id: "108", idType: DATABASE_ID) {
+            content
+            title
+            date
+        }
+    }
+    `)
+  return data?.page
+}
+
 
 
 export async function getAllPostsForHome(preview) {
