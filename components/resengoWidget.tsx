@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
+declare global {
+    interface Window {
+      gotable: any;
+    }
+  }
+
 // Function to check if the script is loaded
 const isScriptLoaded = () => {
     return typeof window !== 'undefined' && typeof window.gotable !== 'undefined';
