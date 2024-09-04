@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Function to check if the script is loaded
 const isScriptLoaded = () => {
-    return typeof window !== 'undefined' && typeof window.RESENGO_WIDGET !== 'undefined';
+    return typeof window !== 'undefined' && typeof window.gotable !== 'undefined';
 };
 
-export default function ResengoWidget(){
+export default function ResengoWidget() {
     const [scriptLoaded, setScriptLoaded] = useState(isScriptLoaded());
 
     useEffect(() => {
@@ -13,17 +13,13 @@ export default function ResengoWidget(){
             const script = document.createElement('script');
             script.type = 'text/javascript';
             script.async = true;
-            script.src = 'https://static.resengo.com/ResengoWidget';
+            script.src = 'https://gotable.app/restaurants/130078/reservations/new.js?locale=nl&layout=floating&variant=themed/283&position=bottom-right';
 
             const onLoad = () => {
-                if (window.RESENGO_WIDGET) {
-                    window.RESENGO_WIDGET({
-                        companyId: '1778383', // Replace with your actual company ID
-                        language: 'nl', // Replace with your preferred language code
-                    });
+                if (typeof window.gotable !== 'undefined') {
                     setScriptLoaded(true);
                 } else {
-                    console.error('Resengo widget failed to load.');
+                    console.error('GoTable widget failed to load.');
                 }
             };
 
@@ -36,7 +32,7 @@ export default function ResengoWidget(){
                 document.body.removeChild(script);
             };
         }
-    }, []);
+    }, [scriptLoaded]);
 
-    return <div id="resengo-widget-container"></div>;
-};
+    return <div id="gotable-widget-container"></div>;
+}
